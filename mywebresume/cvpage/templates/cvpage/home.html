@@ -1,6 +1,8 @@
-<h2>Hello Ted</h2>
+ {%load static%}
 
-<img src="{% static 'images/profile.jpg' " alt="" />
+<!--<h2>Hello Ted</h2>
+
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,9 +12,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chez Resume</title>
     <link href="{%static '/css/main.css' %}" rel="stylesheet" type="type/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" /> {%load static%}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 </head>
 
-<body></body>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-body h-100" id="profile-wrapper">
+                    <img id="profile-pic" src="{% static 'images/profile.jpg' " alt="" />
+
+                </div>
+                <div class="col-md-9">
+                    <div class="card card-body h-100">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-bodyh-100">
+
+                    </div>
+                </div>
+            </div>
+</body>
 
 </html>
